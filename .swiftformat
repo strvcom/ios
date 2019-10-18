@@ -15,4 +15,4 @@
 --exclude Pods
 
 # rules
---disable blankLinesAroundMark
+--disable blankLinesAroundMark,ranges,trailingCommas
