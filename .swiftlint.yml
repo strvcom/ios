@@ -37,6 +37,7 @@ opt_in_rules:
   - strict_fileprivate
   - explicit_init
   - redundant_objc_attribute
+  - unowned_variable_capture
 
 #
 # Paths to include during linting. `--path` is ignored if present.
