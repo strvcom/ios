@@ -26,7 +26,6 @@ opt_in_rules:
   - fatal_error_message
   - first_where
   - toggle_bool
-  - unused_private_declaration
   - modifier_order
   - contains_over_first_not_nil
   - convenience_type
@@ -37,6 +36,7 @@ opt_in_rules:
   - explicit_init
   - redundant_objc_attribute
   - unowned_variable_capture
+  - strong_iboutlet
 
 #
 # Paths to include during linting. `--path` is ignored if present.
@@ -51,8 +51,8 @@ excluded:
   - Carthage
   - Pods
   - Tests
-  - Vendor
   - Scripts
+  - vendor
   - fastlane
   - R.generated.swift
 
@@ -68,7 +68,8 @@ identifier_name:
   excluded:
     - id
 
-empty_count: warning
+empty_count:
+  severity: warning
 
 trailing_whitespace:
   ignores_empty_lines: true
